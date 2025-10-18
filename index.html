@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Convertidor de Divisas - Marlon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">Convertidor de Divisas</h1>
+    <p class="subtitle">Rápido · Moderno · Hecho con JavaScript</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="card-header">
+        <h2>Inicio</h2>
+        <button id="swapBtn" title="Intercambiar monedas">🔁</button>
+      </div>
+
+      <div class="form-row">
+        <label for="amount">Monto</label>
+        <input id="amount" type="number" min="0" step="any" placeholder="ej. 100.00" />
+      </div>
+
+      <div class="form-row selects">
+        <div>
+          <label for="from">De</label>
+          <select id="from"></select>
+        </div>
+        <div>
+          <label for="to">A</label>
+          <select id="to"></select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <button id="convertBtn" class="primary">Convertir</button>
+      </div>
+
+      <div id="result" class="result hidden">
+        <p class="value" id="resultValue"></p>
+        <p class="meta" id="resultMeta"></p>
+      </div>
+    </section>
+
+    <aside class="card about">
+      <h3>Acerca de</h3>
+      <p><strong>Autor:</strong> Marlon Stiven</p>
+      <p><strong>Descripción:</strong> Aplicación web simple para convertir valores entre 20 divisas. Usa un objeto `rates` en JavaScript con tasas relativas.</p>
+      <hr/>
+      <h4>Extras incluidos</h4>
+      <ul>
+        <li>Banderas con emoji junto a cada divisa</li>
+        <li>Validaciones (campo vacío / negativo)</li>
+        <li>Salida con 2 decimales (toFixed(2))</li>
+        <li>Interfaz responsive</li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Contacto: marlonstiven · <a href="mailto:mscartagenama06@inemkennedy.edu.co">mscartagenama06@inemkennedy.edu.co</a></p>
+      <p>Repositorio: <em>convertidor-divisas</em> · Deployed en GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
